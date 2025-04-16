@@ -1,0 +1,43 @@
+theme = "kaolin-dark"
+
+[editor]
+line-number = "relative"
+auto-save = true
+auto-format = true
+shell = ["zsh", "-c"]
+bufferline = "multiple"
+
+[editor.lsp]
+display-messages = true
+
+[editor.whitespace.render]
+space = "none"
+nbsp = "none"
+tab = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·" 
+
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+right = ["diagnostics", "selections", "version-control", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[keys.normal.space]
+n = ":new"
+x = ":quit" 
+q = ":buffer-close"
+o = ":buffer-close-others"
+
+
+[keys.normal]
+C-g = [":new",":insert-output lazygit", ":buffer-close!",":redraw"]
