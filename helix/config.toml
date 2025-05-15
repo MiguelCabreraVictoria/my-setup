@@ -1,9 +1,10 @@
-theme = "kaolin-dark"
+theme = "kanagawa-dragon"
 
 [editor]
 line-number = "relative"
 auto-save = true
 auto-format = true
+color-modes = true
 shell = ["zsh", "-c"]
 bufferline = "multiple"
 
